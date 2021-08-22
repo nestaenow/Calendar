@@ -1,0 +1,41 @@
+table {
+    border-spacing: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.calendar caption {
+    font-variant: small-caps;
+    text-align: left;
+    font-size: 170%;
+    color: #06374e;
+    font-weight: 300;
+}
+tr:nth-child(odd){
+    background-color: #1c6485;
+}
+tr:nth-child(even){
+    background-color: #8ccae7;
+}
+tr:last-child>td:first-child {
+    border-radius: 0 0 0 5px;
+}
+tr:last-child>td:last-child {
+    border-radius: 0 0 5px 0;
+}
+td {
+    width: 90px;
+    height: 90px;
+    font-size: 100%;
+    color: #ffffff;
+    padding-left: 5px;
+}
+.sept {
+    color: #ffffff65;
+}
+.event {
+    font-size: 80%;
+    color: #06374e;
+    visibility: hidden;
+}
+td:active>.event {
+    visibility: visible;
+}
